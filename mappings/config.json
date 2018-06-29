@@ -1,0 +1,28 @@
+[{
+    "request": {
+        "method": "GET",
+        "url": "/dev/trunk/service/mapspotter/data/info/thirdparty/upload"
+    },
+    "response": {
+        "status": 200,
+        "path": "./mappings/response/uploadJSON.json"
+    }
+},{
+    "request": {
+        "method": "GET",
+        "url": "/dev/trunk/service/mapspotter/data/info/thirdparty/close"
+    },
+    "response": {
+        "status": 200,
+        "path": "./mappings/response/close.json"
+    }
+},{
+    "request": {
+        "method": "GET",
+        "url": "/dev/trunk/service/mapspotter/data/info/thirdparty/export"
+    },
+    "response": {
+        "status": 200,
+        "path": ""
+    }
+}]

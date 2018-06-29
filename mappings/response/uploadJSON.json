@@ -1,0 +1,13 @@
+{
+	"totalCount": 4750,
+	"data": {
+		"b_featureKind": "1",
+		"i_infoName": "sxg_poi_test1",
+		"h_outdoor": 5011,
+		"importDate": "20180625141552205"
+	},
+	"logUrl": "./mappings/response/5011_20180625094117265_sxg_poi_test1.log",
+	"errmsg": "success",
+	"batchCount": 1,
+	"errcode": 0
+}

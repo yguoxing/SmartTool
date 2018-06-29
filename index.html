@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>三方数据导入</title>
+        <link href="resources/application.css" rel="stylesheet" type="text/css" />
+        <script src="resources/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">三方数据导入</div>
+            <div class="body">
+                <div class="uploadArea">
+                    <div class="leftLable"><span>选择JSON文件：</span></div>
+                    <div class="rightContent">
+                        <input type="file" style="opacity:0"  id="uploadJSON">
+                        <div class="fileDiv">
+                            <div><img src="resources/upload.png" width="18px" height="18px"></div>
+                            <div id="jsonFileName"><span>请选择上传文件</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fileInfo" id="jsonInfo">
+                    <div class="leftLable">上传文件概述：</div>
+                    <div class="rightContent" id="rightInfo">
+                        <div><span>要素名称：</span><span class="showSpan"></span></div>
+                        <div><span>总数据条数：</span><span class="showSpan"></span></div>
+                        <div><span>导入人员工编号：</span><span class="showSpan"></span></div>
+                    </div>
+                    <div class="rightContent" id="errorInfo">文件格式错误</div>
+                </div>
+                <div class="buttonArea">
+                    <span class="button" id="importJSON">导入</span><span class="button" id="exportLog">log导出</span>
+                </div>
+                <div class="lineArea"></div>
+                <div class="uploadArea">
+                    <div class="leftLable"><span>上传log文件：</span></div>
+                    <div class="rightContent">
+                        <input type="file" style="opacity:0" id="uploadLog">
+                        <div class="fileDiv">
+                            <div><img src="resources/upload.png" width="18px" height="18px"></div>
+                            <div id="logFileName"><span>请选择上传文件</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fileInfo" id="logInfo">
+                    <div class="leftLable">Log文件概述：</div>
+                    <div class="rightContent" id="logoDetail">
+                        <div><span>要素名称：</span><span class="showSpan"></span></div>
+                        <div><span>导入时间：</span><span class="showSpan"></span></div>
+                        <div><span>总数据条数：</span><span class="showSpan"></span></div>
+                        <div><span>导入人员工编号：</span><span class="showSpan"></span></div>
+                        
+                    </div>
+                </div>
+                <div class="buttonArea">
+                    <span class="button" id="reportExport">反馈导出</span><span class="button" id="closeData">关闭</span>
+                </div>
+            </div>
+            <div class="tips">
+                <img src="resources/success.png" id="successImg" width="22px" height="22px">
+                <img src="resources/error.png"  id="errorImg" width="22px" height="22px">
+                <span></span>
+            </div>
+            
+            <div style="display: none">
+                <form action="" name="exportFile" id="exportFile" target="export" method="post" accept-charset="utf-8"></form>
+                <iframe name="export" id="export"></iframe>
+             </div>
+        </div>
+        <div class="logContent">
+            <textarea disabled> </textarea>
+        </div>
+        <div class="confirmContent">
+            <div class="confirmSpan">
+                <div>确认关闭？</div>
+                <div>
+                    <span id="confirmClose">确认</span><span id="cancelClose">取消</span>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+    <script src="resources/main.js"></script>
+</html>
